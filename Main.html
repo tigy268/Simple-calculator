@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calStyle.css">
+    </head>
+    <body  onload="defaultState()">
+        <script src="CalculatorFunctions3.js"></script> 
+        <div class="MainBody">
+            <div class="screen">
+                <div id="screenPreviewPart"></div>
+                <div id="screenMainPart"></div>
+            </div>
+        
+            <div class="keyboard">
+                <div class="numberButton operation enable" id="procent" onclick="basefunction('percent')">%</div>
+                <div class="numberButton operation" id="ce" onclick="clearOperation('CE')">CE</div>
+                <div class="numberButton operation" id="c" onclick="clearOperation('C')">C</div>
+                <div class="numberButton operation" id="cls" onclick="cls()" >⊲</div>
+                <div class="numberButton operation enable" id="fraction" onclick="basefunction('ext','fract')">⅟x</div>
+                <div class="numberButton operation enable" id="pow" onclick="basefunction('ext','^')">&#851²</div>
+                <div class="numberButton operation enable" id="element" onclick="basefunction('ext','sqrR')">²√x</div>
+                <div class="numberButton operation enable" onclick="basefunction('operation','÷')" id="divorc">÷</div>
+                <div class="numberButton" onclick="addNumber(7)" id="num7">7</div>
+                <div class="numberButton" onclick="addNumber(8)" id="num8">8</div>
+                <div class="numberButton" onclick="addNumber(9)" id="num9">9</div>
+                <div class="numberButton operation enable" onclick="basefunction('operation','*')" id="multiply">X</div>
+                <div class="numberButton" onclick="addNumber(4)" id="num4">4</div>
+                <div class="numberButton" onclick="addNumber(5)" id="num5">5</div>
+                <div class="numberButton" onclick="addNumber(6)" id="num6">6</div>
+                <div class="numberButton operation enable" onclick="basefunction('operation','-')" id="minus">–</div>
+                <div class="numberButton" onclick="addNumber(1)" id="num1">1</div>
+                <div class="numberButton" onclick="addNumber(2)" id="num2">2</div>
+                <div class="numberButton" onclick="addNumber(3)" id="num3">3</div>
+                <div class="numberButton operation enable" onclick="basefunction('operation','+')" id="plus">+</div>
+                <div class="numberButton operation enable" id="negate" onclick="basefunction('negate')">&#177</div>
+                <div class="numberButton" id="num0"onclick="addNumber(0)">0</div>
+                <div class="numberButton operation enable" id="num0" onclick="basefunction('fltp')">,</div>
+                <div class="numberButton operation2" id="equal" onclick="sumUp()">=</div>
+            </div>    
+        </div>
+        
+    </body>
+    <footer>
+        <div class="shape">
+            <div class="square"></div>
+            <div class="square2"></div>
+        </div>
+    </footer>
+</html>

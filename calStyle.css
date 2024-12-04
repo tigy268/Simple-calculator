@@ -1,0 +1,183 @@
+
+
+
+
+.numberButton
+{
+    border: 1px solid black;
+    width: 25px;
+    height:20px;
+  
+    float: left;
+    margin: auto;
+    font-size: .5em;
+    text-align: center;
+   padding-top: 1px;;
+    padding: auto;
+    border-radius: 2px;
+}
+.numberButton.operation.enable
+{
+    background-color:#5f4e7e ;
+}
+.numberButton.operation.disable
+{
+    background-color:#2e263c ;
+}
+.numberButton.operation
+{
+    background-color:#5f4e7e ;
+}
+.numberButton.operation:hover
+{
+    background-color:#816da5;
+}
+.numberButton.operation:active
+{
+    background-color:#5f4e7e;
+}
+.numberButton.operation2
+{
+    background-color:#f84e4e;
+}
+.numberButton.operation2:hover
+{
+    background-color:#ff7070;
+}
+.numberButton.operation2:active
+{
+    background-color:#e42d2d;
+}
+.numberButton:hover
+{
+    border: 1px solid black;
+
+    border-radius: 2px;
+    float: left;
+    margin: auto;
+    
+    text-align: center;
+   padding-top: 1px;;
+    padding: auto;
+    background-color: grey;
+    opacity: 0.9;
+}
+.numberButton:active
+{
+    background-color: #434343;
+}
+.keyboard
+{   margin:auto;
+    border: 0px solid yellow;
+    width:  120px;
+    height: 170px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 6px;
+    border-radius: 5%;
+    background-color: #686868;
+}
+.MainBody
+{
+    display: block;
+    border-radius: 5%;
+    padding: auto;
+    border: 0px solid red;
+    text-align: center;
+    width:  150px;
+    height: 238px;
+margin: auto;
+padding-top: 0.025%;
+padding-bottom: 0.75%;
+background-color: #363636;
+
+}
+
+:root
+{
+   
+    --screen-number: 18px;
+    background-image: radial-gradient(ellipse at top, rgb(63, 38, 161) , transparent),
+    radial-gradient(ellipse at bottom,rgb(248, 78, 78)4%, rgb(42, 0, 120)75%);
+    background-repeat: no-repeat;
+    animation-name: griedient-effect;
+    animation-duration: 12s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    height: 100%;
+    animation-timing-function: ease;
+    background-size: 400% 400%;
+
+}
+.screen
+{
+    
+    width: 75px;
+    height: 43px;
+    
+    
+    
+    overflow-wrap: break-word;
+    margin: 6px auto;
+    border: 1.43px solid rgb(0, 0, 0);
+    position:center;
+    align-items: center;
+}
+
+.screen > #screenPreviewPart
+{
+    
+   
+    width:inherit ;
+    height:18px ;
+    font-size: 10px;
+    background-color: #575252;
+    word-wrap: break-word;
+    
+  
+}
+
+.screen>#screenMainPart
+{
+ 
+    
+    font-size: var(--screen-number);
+    width:inherit  ;
+    height:25px ;
+    background-color: #575252;
+    word-wrap: break-all;
+    
+   
+}
+.shape
+{
+    
+    transform: scale(0.45);
+    position: absolute;
+    right:  250px;
+}
+.square {
+    width: 500px;
+      height: 200px;
+   border-radius: 49%;
+   box-shadow: 35px 35px 0px 0px rgb(57, 55, 55);
+     transform:rotate(-18deg);
+     position: absolute;
+ }
+.square2 {
+    width: 500px;
+    height: 200px;
+   border-radius: 49%;
+   box-shadow: 35px 35px 0px 0px rgb(0, 124, 232);
+     transform:rotate(-18deg);
+     position: absolute;
+   top: -5px; left: -13px;
+
+ }
+
+
+ @keyframes griedient-effect {
+from{background-position: left,bottom,right;}
+to{background-position: right,top,left;}
+    
+ }
